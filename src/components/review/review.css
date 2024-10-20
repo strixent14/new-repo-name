@@ -1,0 +1,107 @@
+/* Section Styling */
+.review {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: transparent; /* Set background to transparent */
+}
+
+.section_title {
+    font-size: 2.5rem;
+    color: #ffffff; /* White color for title */
+    margin-bottom: 1.5rem;
+}
+
+.section_subtitle {
+    font-size: 1.2rem;
+    color: #ffffff; /* White color for subtitles */
+    margin-bottom: 3rem;
+}
+
+.review_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* Reduced gap between elements */
+    overflow: hidden; /* Prevents scrolling */
+}
+
+/* Intro Text */
+.intro_text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ffffff; /* White color for intro text */
+    max-width: 800px;
+    margin: 0 0 2rem; /* Reduced bottom margin */
+    text-align: left;
+}
+
+/* Discount Offer Styling */
+.discount_offer {
+    background-color: #ffffff; /* Keeping discount offer background white for contrast */
+    border: 1px solid #ddd;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 800px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem; /* Added top margin */
+}
+
+.offer_title {
+    font-size: 1.5rem;
+    color: #ff0000; /* Highlight the offer in red */
+    margin-bottom: 1rem;
+}
+
+.offer_text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Thoughts Section Styling */
+.writing_slots {
+    background-color: #ffffff; /* Keeping thoughts section background white for contrast */
+    border: 1px solid #ddd;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 800px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 0.5rem; /* Reduced top margin to move it up */
+}
+
+.thoughts_title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.thoughts_text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .section_title {
+        font-size: 2rem;
+    }
+
+    .intro_text, .offer_text, .thoughts_text {
+        font-size: 1rem;
+    }
+
+    .discount_offer, .writing_slots {
+        padding: 1.5rem;
+    }
+}
+
+/* Prevent scrolling on the body */
+body {
+    overflow: hidden; /* Prevents scrolling for the entire body */
+}

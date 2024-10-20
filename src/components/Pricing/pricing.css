@@ -1,0 +1,103 @@
+/* General Styles */
+.pricing_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Set relative positioning for the alert */
+}
+
+.pricing_row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Adjust for your layout */
+    margin-bottom: 2rem;
+}
+
+.pricing_column {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Each column takes half of the row */
+}
+
+.pricing_card {
+    background-color: var(--text-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px; /* Space between cards */
+    flex: 1; /* Ensure equal height */
+    text-align: center; /* Center text */
+    transition: transform 0.3s;
+}
+
+.pricing_card:hover {
+    transform: scale(1.05);
+}
+
+.pricing_title {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    color: #000;
+    margin: 0.5rem 0;
+}
+
+.pricing_price {
+    font-size: 1.5rem; /* Adjust for price visibility */
+    font-weight: bold;
+    color: #ff0000; /* Adjust for color scheme */
+}
+
+.pricing_info {
+    font-size: var(--tiny-font-size);
+    color: #000;
+    margin: 0.2rem 0;
+}
+
+/* Discount Alert Styles */
+.discount_alert {
+    background-color: rgba(255, 0, 0, 0.2); /* Light red background for visibility */
+    color: red; /* Red text color */
+    font-size: 1.2rem; /* Slightly larger font size for emphasis */
+    font-weight: bold; /* Make the text bold */
+    position: absolute; /* Positioning */
+    top: 70px; /* Adjust distance from the top as needed */
+    right: 20px; /* Position on the right */
+    padding: 15px; /* Add padding for better spacing */
+    border: 2px solid red; /* Red border to make it pop */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center align text */
+    z-index: 1000; /* Ensure it appears above other content */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    max-width: 300px; /* Set a max width for better control */
+}
+
+/* Contact Us Box for Additional Services */
+.contact_services {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(0, 0, 255, 0.1); /* Light blue background */
+    border: 1px solid #0000ff; /* Blue border to match the design */
+    color: #000;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 8px; /* Smooth rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 80%; /* Keep it within a nice margin */
+    margin-left: auto;
+    margin-right: auto; /* Centered horizontally */
+}
+
+.contact_services p {
+    margin: 0.5rem 0; /* Proper spacing */
+    font-weight: 500; /* Medium weight */
+}
+
+.contact_services a {
+    color: #ff0000; /* Red link to match the overall design */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact_services a:hover {
+    text-decoration: underline;
+}

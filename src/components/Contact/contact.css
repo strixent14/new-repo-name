@@ -1,0 +1,145 @@
+.contact_container {
+    border: 1px solid #fff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 7rem;
+}
+
+.contact_robot {
+    position: absolute;
+    top: 6rem;
+    right: 24rem;
+    width: 400px;
+    z-index: 1;
+}
+
+.contact_title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000000;
+    margin-top: var(--mb-2);
+}
+
+.contact_title::before {
+    content: "";
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    bottom: 34.8rem;
+    background: linear-gradient(to right, #FF0000, #A83232);
+}
+
+.form_group-name {
+    width: 100%;
+}
+
+.form_control-name {
+    width: 100%;
+    padding: 15px 50px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.contact_form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form_group {
+    width: calc(100% / 2 - 10px);
+    margin-top: 10px;
+}
+
+.form_control {
+    width: 100%;
+    padding: 15px 50px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid;
+}
+
+.form_group label {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-normal);
+    position: relative;
+    top: .65rem;
+    left: 1.25rem;
+    padding: 0.25rem;
+    z-index: 10;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.form_group-icon {
+    position: relative;
+    top: 2.65rem;
+    left: -2rem;
+    color: #000000;
+    font-size: var(--meduim-font-size);
+    font-weight: var(--font-normal);
+}
+
+.form_group-icon1 {
+    position: relative;
+    top: 2.5rem;
+    left: -3.25rem;
+    color: #000000;
+}
+
+.form_group-icon2 {
+    position: relative;
+    top: 2.65rem;
+    left: -4.5rem;
+    color: #000000;
+}
+
+.form_group-btn {
+    float: right;
+    padding: 10px 3.5rem;
+    margin-top: 2rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #FF0000, #A83232);
+}
+
+.btn-icon {
+    position: relative;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .contact_container {
+        width: auto;
+    }
+
+    .contact_title::before {
+        bottom: 31rem;
+    }
+
+    .contact_robot {
+        top: 8.5rem;
+        right: 5rem;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 676px) {
+    .form_group {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .contact_robot {
+        top: 9.75rem;
+        width: 170px;
+    }
+}
