@@ -1,18 +1,21 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-:root{
+/* Root Variables */
+:root {
   --header-height: 3rem;
 
   --text-color: #fff;
   --title-color: #e6e6e6;
   --body-color: #08083A;
+  --container-color: #000; /* Added for button color */
 
   --body-font: "Poppins", sans-serif;
 
   --big-font-size: 2.75rem;
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
-  --h3-font-size: 1.25;
+  --h3-font-size: 1.25rem; /* Fixed missing unit */
   --normal-font-size: 1rem;
   --small-font-size: 0.875rem;
   --smaller-font-size: 0.813rem;
@@ -36,8 +39,9 @@
   --z-modal: 1000;
 }
 
-@media screen and  (max-width: 992px) {
-  :root{
+/* Responsive Font Sizes */
+@media screen and (max-width: 992px) {
+  :root {
     --big-font-size: 2.75rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -48,169 +52,180 @@
   }
 }
 
-*{
+/* Universal Styles */
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-html{
-  scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth; /* Consider removing for faster navigation */
 }
 
+/* Body and Text Styles */
 body,
 button,
 input,
 textarea,
-.btn{
+.btn {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
 
-body{
+body {
   background-color: var(--body-color);
   color: var(--text-color);
+  transition: background-color 0.2s ease; /* Faster background transition */
 }
 
-h1, h2, h3{
+/* Header Styles */
+h1, h2, h3 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
+  transition: color 0.2s ease; /* Faster color transition */
 }
 
-ul{
+/* General Styles */
+ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
+  transition: color 0.2s ease; /* Faster color transition for links */
 }
 
-button{
+button {
   cursor: pointer;
   border: none;
   outline: none;
+  transition: background-color 0.2s ease; /* Faster background transition */
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
 
-.section{
+/* Section Styles */
+.section {
   padding: 6rem 0 2rem;
 }
 
-.section_title{
+.section_title {
   font-size: var(--h1-font-size);
   color: var(--title-color);
   margin-top: 4rem;
 }
 
-.section_subtitle{
+.section_subtitle {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: 4rem;
 }
 
 .section_title,
-.section_subtitle{
+.section_subtitle {
   text-align: center;
 }
 
-.container{
+.container {
   max-width: 1168px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.grid{
+.grid {
   display: grid;
   gap: 1.5rem;
 }
 
-.button{
+/* Button Styles */
+.button {
   display: inline-block;
   background: linear-gradient(to right, #FF0000, #A83232);
   color: var(--container-color);
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
+  transition: background-color 0.2s ease; /* Faster button background transition */
 }
 
-.btn{
+.btn {
   display: inline-block;
   color: #727272;
   font-weight: var(--font-medium);
   margin-left: 2rem;
 }
 
-.button:hover{
+.button:hover {
   background-color: var(--title-color-dark);
 }
 
-.button_icon{
+.button_icon {
   margin-left: var(--mb-0-5);
 }
 
-.button--flex{
+.button--flex {
   display: inline-flex;
   align-items: center;
 }
 
+/* Media Queries for Smaller Screens */
 @media screen and (max-width: 992px) {
-  .container{
+  .container {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
   }
 
-  .button{
+  .button {
     padding: 1rem 1.75rem;
   }
 
-  .button_icon{
+  .button_icon {
     font-size: 12px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  body{
+  body {
     margin: 0 0 var(--header-height) 0;
   }
 
-  .section{
+  .section {
     padding: 2rem 0 4rem;
   }
 
-  .button{
+  .button {
     padding: .75rem 1.5rem;
   }
 
-  .button_icon{
+  .button_icon {
     font-size: 12px;
   }
 
-  .section_subtitle{
+  .section_subtitle {
     margin-bottom: var(--mb-3);
   }
 }
 
 @media screen and (max-width: 576px) {
-  
+  /* Additional styles can be added here if needed */
 }
 
 @media screen and (max-width: 350px) {
-  :root{
+  :root {
     --big-font-size: 2.25rem;
   }
 
- .container{
-  margin-left: var(--mb-1);
-  margin-right: var(--mb-1);
- }
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
 
- .button{
-  padding: .5rem 1.25rem;
-  font-size: 14px;
-}
-
+  .button {
+    padding: .5rem 1.25rem;
+    font-size: 14px;
+  }
 }
